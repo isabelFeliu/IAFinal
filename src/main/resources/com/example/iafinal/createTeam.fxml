@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iafinal.PlayerController">
+   <children>
+      <Label layoutX="50.0" layoutY="24.0" prefHeight="17.0" prefWidth="159.0" text="Add players" textFill="#c30e0e" />
+      <TextField fx:id="txtName" layoutX="14.0" layoutY="429.0" />
+      <TextField fx:id="txtPosition" layoutX="178.0" layoutY="429.0" />
+      <TextField fx:id="txtNumber" layoutX="346.0" layoutY="429.0" />
+      <Label layoutX="23.0" layoutY="406.0" prefWidth="72.0" text="Player Name " />
+      <Label layoutX="384.0" layoutY="406.0" text="Player  Position" />
+      <Label layoutX="217.0" layoutY="406.0" text="Player Number" />
+      <Button fx:id="brn_add" layoutX="238.0" layoutY="471.0" mnemonicParsing="false" onAction="#AddPlayer" text="Add" />
+      <ComboBox fx:id="teamsDropDown" layoutX="23.0" layoutY="49.0" onAction="#initialize" prefWidth="150.0" promptText="Chose a team" />
+      <TableView fx:id="TeamTableView" layoutX="14.0" layoutY="87.0" prefHeight="305.0" prefWidth="507.0">
+        <columns>
+          <TableColumn fx:id="nameTV" prefWidth="197.0" text="Name" />
+          <TableColumn fx:id="numberTV" prefWidth="110.0" text="Number" />
+            <TableColumn fx:id="positionTV" prefWidth="197.0" text="Position" />
+        </columns>
+      </TableView>
+      <Button layoutX="419.0" layoutY="471.0" mnemonicParsing="false" onAction="#SwitchToMatch" text="Create a match" />
+      <Button layoutX="32.0" layoutY="472.0" mnemonicParsing="false" onAction="#SwitchToHomePage" text="Done" />
+   </children>
+</Pane>

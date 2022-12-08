@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iafinal.AccuracyPageController">
+   <children>
+      <Text fill="#bf3b3b" layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accuracy of: ">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serving:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spiking:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciving:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocking:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="SER_T" layoutX="91.0" layoutY="64.0" mnemonicParsing="false" onAction="#SER_add" text="True " />
+      <Button fx:id="SER_F" layoutX="167.0" layoutY="64.0" mnemonicParsing="false" onAction="#SER_subtract" text="False" />
+      <Button fx:id="SP_T" layoutX="92.0" layoutY="130.0" mnemonicParsing="false" onAction="#SP_add" text="True" />
+      <Button fx:id="SP_F" layoutX="167.0" layoutY="130.0" mnemonicParsing="false" onAction="#SP_subtract" text="False" />
+      <Button fx:id="SET_T" layoutX="91.0" layoutY="204.0" mnemonicParsing="false" onAction="#SET_add" text="True " />
+      <Button fx:id="SET_F" layoutX="167.0" layoutY="204.0" mnemonicParsing="false" onAction="#SET_subtract" text="False" />
+      <Button fx:id="RE_F" layoutX="167.0" layoutY="267.0" mnemonicParsing="false" onAction="#RE_subtract" text="False" />
+      <Button fx:id="BL_F" layoutX="167.0" layoutY="334.0" mnemonicParsing="false" onAction="#BL_subtract" text="False" />
+      <Button fx:id="RE_T" layoutX="91.0" layoutY="267.0" mnemonicParsing="false" onAction="#RE_add" text="True " />
+      <Button fx:id="BL_T" layoutX="91.0" layoutY="334.0" mnemonicParsing="false" onAction="#BL_add" text="True " />
+   </children>
+</Pane>

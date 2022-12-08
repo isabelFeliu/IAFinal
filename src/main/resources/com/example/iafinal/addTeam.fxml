@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="251.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iafinal.TeamController">
+   <children>
+      <Label layoutX="23.0" layoutY="22.0" prefHeight="17.0" prefWidth="157.0" text="Create Team" textFill="#b92222" />
+      <TextField fx:id="txtTeamName" layoutX="22.0" layoutY="76.0" promptText="Team Name" />
+      <Button fx:id="btn_addTeam" layoutX="22.0" layoutY="156.0" mnemonicParsing="false" onAction="#AddTeam" text="Save" />
+      <Button layoutX="102.0" layoutY="156.0" mnemonicParsing="false" onAction="#SwitchToSceneCreateTeam" text="Continue" />
+   </children>
+</Pane>
